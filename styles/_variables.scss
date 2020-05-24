@@ -1,0 +1,46 @@
+$blanco: #ffffff;
+$azul-fondo-uno: #0000ff;
+$azul-fondo-dos: #0000a3;
+$negro: #060a24;
+$boton-normal: #00f3bb;
+$boton-hover-uno: #0000fe;
+$boton-hover-dos: #00f0b8;
+$fondo-menu: #0000ec;
+
+@mixin fuente-menu{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+}
+
+@mixin titulo{
+
+    font-family: 'IBM Plex Sans',sans-serif;
+    font-size: 36px;
+    color: $negro;
+    letter-spacing: 0;
+    line-height: 42px;
+    font-weight: 500;
+    padding-right: 50px;
+
+}
+@mixin parrafo {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: $negro;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+@mixin boton{
+    border: 0;
+    background-color: $boton-normal;
+    height: 48px;
+    width: 100%;
+    padding: 0;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    font-size: 16px;
+    color: $negro;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+}

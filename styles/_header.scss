@@ -1,0 +1,140 @@
+@import './variables';
+
+header{
+
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin: 10px 19px 0px 16px;
+    justify-content: space-between;
+
+    .logo img{
+
+        width: 24px;
+        height: 24px;
+    }
+
+    .menu{
+
+        padding-top: 3px;
+    
+        ul{
+            padding-bottom: 0px;
+            margin-top: 0;
+            width: 100%;
+            position: absolute;
+            top: 44px;
+            right: 0;
+            overflow: hidden;
+            list-style: none;
+            background: $fondo-menu;
+            height: 0px;
+            transition: height 0.5s ease;
+
+            li{
+                padding-left: 16px;
+                position: relative;
+
+                a{
+                    @include fuente-menu;
+                    position: relative;
+                    text-decoration: none;
+                    color: $blanco;
+                    padding-bottom: 24px;
+                    line-height: 28px;
+                    display: block;
+                }
+
+                a:hover{
+
+                    color: $boton-normal;
+                    text-decoration: line-through;
+                }
+            }
+            li:first-child{
+                padding-top: 16px;
+            }
+        }
+
+        input{
+
+            display: block;
+            width: 40px;
+            height: 32px;
+            opacity: 0;
+            z-index: 2;
+            position: absolute;
+
+        }
+
+        input[type="checkbox"]:checked ~ ul{
+
+            height: 240px;
+            transition: height 0.5s ease-in-out;
+        }
+
+        input[type="checkbox"]:checked ~ span{
+
+            opacity: 1;
+            transform: rotate(45deg) translate(2px,1px);
+        }
+
+        input:checked ~ span:nth-last-child(3) {
+
+            opacity: 0;
+            transform: rotate(0deg) scale(0.2, 0.2);
+        }
+
+        input:checked ~ span:nth-last-child(2) {
+
+            transform: rotate(-45deg) translate(-1px);
+        }
+        span{
+            display: block;
+            width: 18px;
+            height: 2px;
+            margin-bottom: 3px;
+            position: relative;
+            background: $negro;
+            z-index: 1;
+            transform-origin: 3px 0px;
+            transition: transform 0.5s ease, opacity 0.55s ease;
+        }
+    }
+}
+
+@media screen and (min-width: 321px){
+
+    header{
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 23px;
+    }
+    header nav .menu ul {
+        position: relative;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        background: unset;
+        height: unset;
+    }
+    header nav .menu  ul li {
+        padding-top: 0;
+        padding-left: 48px;
+        display: inline-block;
+    }
+    header nav .menu ul li a {
+        color: $negro;
+        padding: unset;
+        line-height: unset;
+    }
+    header nav .menu  ul li a:hover {
+        color: $boton-normal;
+    } 
+    header nav .menu input {
+        display: none;
+    }
+    header nav .menu span {
+        display: none;
+    }
+}

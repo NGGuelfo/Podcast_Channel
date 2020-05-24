@@ -1,0 +1,16 @@
+.invitados{
+    position: relative;
+    top: 2124px;
+
+    display: flex;
+    flex-direction: column;
+
+    h2{
+        padding-left: 16px;
+        padding-right: 16px;
+        @include titulo;
+    }
+    img{
+        width: 304px;
+    }
+}
