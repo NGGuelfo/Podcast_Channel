@@ -1,0 +1,27 @@
+@import "./variables";
+
+.temas{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 2124px;
+
+    h2{
+    @include titulo;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 24px;
+    }
+    img{
+        margin-bottom: 13px;
+    }
+    label{
+        @include titulo;
+        font-size: 24px;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 36px;
+        line-height: 32px;
+        font-weight: bold;
+    }
+}
