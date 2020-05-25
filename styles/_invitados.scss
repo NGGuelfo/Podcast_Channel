@@ -10,7 +10,42 @@
         padding-right: 16px;
         @include titulo;
     }
-    img{
-        width: 304px;
+    .estelares{
+
+        .devs{
+        width: 320px;
+        height: 243px;
+        margin: 0;
+        padding: 0;
+        img{
+            width: 100%;
+        }
+    }
+    }
+}
+@media screen and (min-width: 321px){
+
+    .invitados{
+        top: 1555px;
+        h2{
+            margin-left: 200px;
+            margin-bottom: 36px;
+        }
+        .estelares{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+
+            .devs{
+                width: 480px;
+                height: 364px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
     }
 }
