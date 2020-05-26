@@ -9,7 +9,6 @@
     background-image: linear-gradient(225deg, $azul-fondo-uno 25%, $azul-fondo-dos 75%);
     transform: skewY(-3deg);
     z-index: 1;
-    position: absolute;
     h2{
 
         @include titulo;

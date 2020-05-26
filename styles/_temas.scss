@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 2124px;
 
     h2{
     @include titulo;
@@ -39,7 +38,6 @@
 @media screen and (min-width: 321px){
     .temas{
         padding-top: 16px;
-        top: 1555px;
 
         h2{
             padding-left: 200px;

@@ -6,10 +6,10 @@
     display: flex;
     flex-direction: column;
     z-index: 2;
-    position: absolute;
-    top: 1472px;
+    position: relative;
 
     .foto{
+        position: absolute;
         padding-top: 48px;
         z-index: 3;
         img{
@@ -19,7 +19,7 @@
         }
     }
     .texto{
-
+        position: relative;
         margin-top: 27px;
         padding-left: 16px;
         padding-right: 16px;
@@ -68,9 +68,6 @@
     }
 }
 }
-@media screen and (min-width: 1457px){
+@media screen and (min-width: 320px){
 
-    .telefono{
-    top: 1133px;
-    }
 }

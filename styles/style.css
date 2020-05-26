@@ -271,7 +271,6 @@ header .menu span {
   -webkit-transform: skewY(-3deg);
           transform: skewY(-3deg);
   z-index: 1;
-  position: absolute;
 }
 
 .reproductor h2 {
@@ -335,11 +334,11 @@ header .menu span {
       -ms-flex-direction: column;
           flex-direction: column;
   z-index: 2;
-  position: absolute;
-  top: 1472px;
+  position: relative;
 }
 
 .telefono .foto {
+  position: absolute;
   padding-top: 48px;
   z-index: 3;
 }
@@ -350,6 +349,7 @@ header .menu span {
 }
 
 .telefono .texto {
+  position: relative;
   margin-top: 27px;
   padding-left: 16px;
   padding-right: 16px;
@@ -414,15 +414,7 @@ header .menu span {
   }
 }
 
-@media screen and (min-width: 1457px) {
-  .telefono {
-    top: 1133px;
-  }
-}
-
 .invitados {
-  position: relative;
-  top: 2124px;
   margin-bottom: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -457,9 +449,6 @@ header .menu span {
 }
 
 @media screen and (min-width: 321px) {
-  .invitados {
-    top: 1555px;
-  }
   .invitados h2 {
     margin-left: 200px;
     margin-bottom: 36px;
@@ -496,7 +485,6 @@ header .menu span {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  top: 2124px;
 }
 
 .temas h2 {
@@ -555,7 +543,6 @@ header .menu span {
 @media screen and (min-width: 321px) {
   .temas {
     padding-top: 16px;
-    top: 1555px;
   }
   .temas h2 {
     padding-left: 200px;
@@ -574,5 +561,9 @@ header .menu span {
     padding-left: 150px;
     padding-top: 45px;
   }
+}
+
+footer {
+  background-color: red;
 }
 /*# sourceMappingURL=style.css.map */
