@@ -230,9 +230,9 @@ header .menu span {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-left: 200px;
   }
   .titulo h1 {
-    margin-left: 100px;
     font-size: 64px;
     line-height: 84px;
   }
@@ -253,23 +253,19 @@ header .menu span {
     line-height: 22px;
     width: 628px;
     margin-bottom: 56px;
-    margin-left: 100px;
   }
   .titulo .boton {
-    margin-left: 100px;
     width: 226px;
     height: 56px;
   }
 }
 
 .reproductor {
+  position: relative;
   padding-top: 64px;
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 100px;
-  background-image: linear-gradient(225deg, #0000ff 25%, #0000a3 75%);
-  -webkit-transform: skewY(-3deg);
-          transform: skewY(-3deg);
   z-index: 1;
   width: 100%;
   display: -webkit-box;
@@ -284,7 +280,23 @@ header .menu span {
           justify-content: center;
 }
 
+.reproductor .inclinacion {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(225deg, #0000ff 25%, #0000a3 75%);
+  -webkit-transform: skewY(-6deg);
+          transform: skewY(-6deg);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
 .reproductor h2 {
+  position: relative;
   font-family: 'IBM Plex Sans',sans-serif;
   font-size: 36px;
   color: #060a24;
@@ -295,13 +307,10 @@ header .menu span {
   color: #ffffff;
   font-weight: 300;
   padding-bottom: 21px;
-  -webkit-transform: skewY(3deg);
-          transform: skewY(3deg);
 }
 
 .reproductor .players {
-  -webkit-transform: skewY(3deg);
-          transform: skewY(3deg);
+  position: relative;
 }
 
 .reproductor .players iframe {
@@ -313,7 +322,10 @@ header .menu span {
   .reproductor {
     padding-left: 100px;
     padding-right: 28px;
-    padding-top: 162px;
+    padding-top: 186px;
+  }
+  .reproductor h2 {
+    padding-left: 100px;
   }
   .reproductor .players {
     display: -webkit-box;
@@ -389,7 +401,6 @@ header .menu span {
 @media screen and (min-width: 1024px) {
   .telefono {
     width: 100%;
-    padding-left: 200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -397,6 +408,9 @@ header .menu span {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .telefono .foto {
     padding-top: 64px;
@@ -413,9 +427,6 @@ header .menu span {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     padding-bottom: 0;
   }
   .telefono .texto p {
@@ -690,5 +701,55 @@ header .menu span {
 
 .copyright .redes a i:hover {
   color: #00f3bb;
+}
+
+@media screen and (min-width: 1024px) {
+  .novedades {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 151px;
+  }
+  .novedades .inclinacion {
+    -webkit-transform: skewY(-3deg);
+            transform: skewY(-3deg);
+  }
+  .novedades h2 {
+    padding-top: 213px;
+    margin-top: 0;
+  }
+  .novedades .episodios {
+    width: 345px;
+    height: 56px;
+  }
+  .copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 100px;
+    padding-top: 36px;
+    padding-bottom: 31px;
+  }
+  .copyright .redes {
+    width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-right: 100px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
