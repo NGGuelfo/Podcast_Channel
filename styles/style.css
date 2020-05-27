@@ -683,4 +683,12 @@ header .menu span {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
+
+.copyright .redes a i {
+  color: #060a24;
+}
+
+.copyright .redes a i:hover {
+  color: #00f3bb;
+}
 /*# sourceMappingURL=style.css.map */
