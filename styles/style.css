@@ -480,6 +480,28 @@ header .menu span {
   width: 100%;
 }
 
+@media screen and (min-width: 650px) {
+  .invitados .estelares {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .invitados .estelares img {
+    width: 50%;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .invitados h2 {
     margin-left: 200px;
@@ -574,6 +596,31 @@ header .menu span {
   margin-bottom: 42px;
 }
 
+@media screen and (min-width: 650px) {
+  .temas .icons {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .temas .icons .imgl {
+    width: 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .temas .icons .imgl label {
+    width: 288px;
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .temas {
     padding-top: 16px;
@@ -589,6 +636,8 @@ header .menu span {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: unset;
+        flex-wrap: unset;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;

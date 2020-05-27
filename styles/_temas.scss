@@ -38,6 +38,31 @@
     }
 }
 
+@media screen and (min-width: 650px){
+
+.temas{
+
+    .icons{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .imgl{
+
+            width: 50%;
+            align-items: center;
+            
+            label{
+
+                width: 288px;
+                text-align: center;
+            }
+        }
+    }
+}
+}
+
 @media screen and (min-width: 1024px){
     .temas{
         padding-top: 16px;
@@ -48,6 +73,7 @@
         .icons{
             display: flex;
             flex-direction: row;
+            flex-wrap: unset;
             justify-content: space-evenly;
             padding-left: 150px;
             padding-top: 45px;
