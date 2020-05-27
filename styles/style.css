@@ -413,6 +413,7 @@ header .menu span {
             justify-content: center;
   }
   .telefono .foto {
+    margin-top: -100px;
     padding-top: 64px;
   }
   .telefono .foto img {
@@ -428,6 +429,11 @@ header .menu span {
         -ms-flex-direction: column;
             flex-direction: column;
     padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .telefono .texto h2 {
+    padding-bottom: 0;
+    font-size: 48px;
   }
   .telefono .texto p {
     width: 464px;
