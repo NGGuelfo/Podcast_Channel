@@ -42,7 +42,14 @@
     }
 }
 }
+@media screen and (min-width: 700px){
 
+    .reproductor{
+        h2{
+            padding-left: 100px;
+        }
+    }
+}
 @media screen and (min-width: 1024px){
 
     .reproductor{
