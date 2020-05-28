@@ -221,6 +221,13 @@ header .menu span {
   background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
 }
 
+@media screen and (min-width: 650px) {
+  .titulo .boton {
+    width: 226px;
+    height: 56px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .titulo {
     display: -webkit-box;
